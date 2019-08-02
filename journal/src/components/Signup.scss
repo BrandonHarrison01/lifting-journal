@@ -1,0 +1,30 @@
+.signup-welcome {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 60px;
+}
+
+.log-form {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.log-title {
+    margin: 20px;
+}
+
+.log-btn {
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+
+    &:hover {
+        background-color:  blue;
+        color: white;
+    }
+}
+
