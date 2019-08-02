@@ -10,18 +10,21 @@ function Login () {
     return (
       <>
         <TopNav />
-        <Form>
-            <label htmlFor="email">UserName:</label>
+        <h1 className='signup-welcome'>Login Form</h1>
+        <Form className='log-form'>
+            <label className='log-title' htmlFor="email">UserName:</label>
             <Field
                 name='userName'
                 type='text'
             />
-            <label htmlFor="password">Password:</label>
+            <br />
+            <label className='log-title' htmlFor="password">Password:</label>
             <Field
                 name='password'
                 type='password'
             />
-            <button>Login</button>
+            <br />
+            <button className='log-btn'>Login</button>
         </Form>
         <Footer />
       </>

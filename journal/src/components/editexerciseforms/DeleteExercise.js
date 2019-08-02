@@ -34,7 +34,7 @@ function DeleteExercise(props) {
 
     return(
         <form>
-            <select onChange={(e) => setExerciseType(e.target.value.toLowerCase())} name='exercise'>
+            <select className='drop-down-type' onChange={(e) => setExerciseType(e.target.value.toLowerCase())} name='exercise'>
                 <option>select</option>
                 <option>Arms</option>
                 <option>Shoulders</option>
@@ -43,12 +43,18 @@ function DeleteExercise(props) {
                 <option>Legs</option>
                 <option>Core</option>
             </select>
-            <select onChange={(e) => setExercise(e.target.value)}>
+            <select className='drop-down-ex' onChange={(e) => setExercise(e.target.value)}>
                 {!userData ? null : userData.map(user => {
                     return <option key={user.id} value={user.id} >{user.exerciseName}</option>
                 })}
             </select>
-            <button onClick={(event) => deleteExercise(event, exercise)}>Delete Exercise</button>
+            <br />
+            <button className='delete-btn' onClick={(event) => {
+                deleteExercise(event, exercise)
+                props.toggle()
+            }}>
+                Delete
+            </button>
         </form>
     )
 }

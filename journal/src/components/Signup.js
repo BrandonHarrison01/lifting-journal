@@ -6,44 +6,51 @@ import Footer from './navmenus/Footer';
 import { withFormik, Form, Field } from 'formik'
 import axios from 'axios'
 
+import './Signup.scss'
+
 const Signup = () => {
     return(
       <>
       <TopNav />
         <div>
             <h1 className="signup-welcome">Welcome to forLife Fitness</h1>
-            <Form>
-                <label>First Name</label>
-                <Field 
-                    placeholder='youremail@user.com' 
+            <Form className='log-form'>
+                <label className='log-title' >First Name</label>
+                <Field
+                    className='log-input' 
                     name='firstName'
                     type='text'
                 />
-                <label>Last Name</label>
-                <Field 
-                    placeholder='youremail@user.com' 
+                <br />
+                <label className='log-title' >Last Name</label>
+                <Field
+                    className='log-input' 
                     name='lastName'
                     type='text'
                 />
-                <label>Username</label>
-                <Field 
-                    placeholder='youremail@user.com' 
+                <br />
+                <label className='log-title' >Username</label>
+                <Field
+                    className='log-input' 
                     name='userName'
                     type='text'
                 />
-                <label>Email</label>
-                <Field 
-                    placeholder='Password'
+                <br />
+                <label className='log-title' >Email</label>
+                <Field
+                    className='log-input' 
                     name="email"
                     type='text'
                 />
-                <label>Password</label>
-                <Field 
-                    placeholder='Password'
+                <br />
+                <label className='log-title' >Password</label>
+                <Field
+                    className='log-input' 
                     name="password"
                     type='password'
                 />
-                <button type="submit">SIGNUP</button>
+                <br />
+                <button type="submit" className='log-btn' >SIGNUP</button>
             </Form>
         </div>
         <Footer />

@@ -3,7 +3,7 @@ import { axiosWithAuth } from '../../axiosWithAuth';
 
 import './EditExercise.scss'
 
-function EditExercise() {
+function EditExercise(props) {
 
     // const token = localStorage.getItem('token');
 
@@ -56,7 +56,7 @@ function EditExercise() {
 
     return(
         <form>
-            <select onChange={(e) => setExerciseType(e.target.value.toLowerCase())} name='exercise'>
+            <select className='drop-down-type' onChange={(e) => setExerciseType(e.target.value.toLowerCase())} name='exercise'>
                 <option>select</option>
                 <option>Arms</option>
                 <option>Shoulders</option>
@@ -65,25 +65,28 @@ function EditExercise() {
                 <option>Legs</option>
                 <option>Core</option>
             </select>
-            <select onChange={(e) => setObjectID(e.target.value)} className={toggle ? 'hide' : ''}>
+            <select onChange={(e) => setObjectID(e.target.value)} className={toggle ? 'hide' : 'drop-down-ex'}>
                 {!userData ? null : userData.map(user => <option key={user.id} value={user.id} >{user.exerciseName}</option>)}
             </select>
             <input 
-                className={!toggle ? 'hide' : ''}
+                className={!toggle ? 'hide' : 'input-box'}
                 // value={exercise}
                 onChange={(e) => changeHandler(e)}
             />
+            <br />
             { !toggle 
                 ? 
-                <button onClick={(event) => toggleFunc(event, true)} >
-                    Edit Exercise
+                <button className='edit-btn' onClick={(event) => toggleFunc(event, true)} >
+                    Edit
                 </button> 
                 : 
-                <button onClick={(event) => {
-                        toggleFunc(event, false)
+                <button 
+                    className='done-btn'
+                    onClick={(event) => {
+                        props.toggle()
                         editExercise(event, objectID, exerciseType, exerciseEdit)
                     }}>
-                    button
+                    Done
                 </button>
             }
         </form>
