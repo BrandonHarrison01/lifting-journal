@@ -1,0 +1,125 @@
+.modal-body {
+    text-align: center
+}
+
+.btn {
+    font-size: 1.5rem;
+    margin: 20px 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.crud-title {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+
+.crud-title:nth-child(3) {
+    border-top: 1px solid rgb(190, 190, 190);
+    padding-top: 40px;
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+.crud-title:nth-child(5) {
+    border-top: 1px solid rgb(190, 190, 190);
+    padding-top: 40px;
+    width: 80%;
+    margin: 40px auto 0;
+}
+
+.drop-down-type {
+    width: 90px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.drop-down-ex {
+    width: 150px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0 ;
+}
+
+.input-box {
+    width: 150px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 20px 0 ;
+}
+
+.add-btn {
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+    border-radius: 5px;
+
+    &:hover {
+        background-color:  green;
+        color: white;
+    }
+}
+
+.edit-btn {
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+
+    &:hover {
+        background-color:  blue;
+        color: white;
+    }
+}
+
+.done-btn {
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid rgb(0, 95, 0);
+    background-color: white;
+    color: rgb(0, 95, 0);;
+    border-radius: 5px;
+
+    &:hover {
+        background-color:  rgb(0, 95, 0);;
+        color: white;
+    }
+}
+
+.delete-btn {
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color:  red;
+        color: white;
+    }
+}

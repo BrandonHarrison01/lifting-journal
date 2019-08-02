@@ -29,7 +29,7 @@ function AddExercise(props) {
 
     return(
         <form>
-            <select onChange={(e) => setWorkoutType(e.target.value.toLowerCase())} name='exercise'>
+            <select className='drop-down-type' onChange={(e) => setWorkoutType(e.target.value.toLowerCase())} name='exercise'>
                 <option>select</option>
                 <option>Arms</option>
                 <option>Shoulders</option>
@@ -40,9 +40,16 @@ function AddExercise(props) {
             </select>
             <input 
                 type='text' 
+                className='input-box'
                 onChange={changeHandler}
             />
-            <button onClick={(event) => addExercise(event, newExercise)}>Add Exercise</button>
+            <br />
+            <button className='add-btn' onClick={(event) => {
+                addExercise(event, newExercise)
+                props.toggle()    
+            }}>
+                Add
+            </button>
         </form>
     )
 }

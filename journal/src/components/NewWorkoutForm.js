@@ -1,6 +1,8 @@
 import React,{ useState, useEffect } from 'react'
 import {axiosWithAuth }from '../axiosWithAuth';
 
+import EditExerciseForm from './EditExerciseForm'
+
 import './NewWorkoutForm.scss'
 
 function NewWorkoutForm(props) {
@@ -71,6 +73,7 @@ function NewWorkoutForm(props) {
             <label className='form-label'>
                     Type: <br />
                     <select component='select' name='type' onChange={handleChange} value={work.type} className='difficulty'>
+                        <option>select</option>
                         <option>Arms</option>
                         <option>Shoulders</option>
                         <option>Back</option>
@@ -93,6 +96,7 @@ function NewWorkoutForm(props) {
                         {!userData ? null : userData.map(user => <option key={user.exerciseName}>{user.exerciseName}</option>)}
                     </select>
                 </label>
+                <EditExerciseForm />
                 <label className='form-label'>
                     Sets: <br />
                     <input 
