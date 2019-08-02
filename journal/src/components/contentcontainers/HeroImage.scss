@@ -1,0 +1,21 @@
+.homehero{
+  background-image: url(https://i.ibb.co/4T7bNFg/victor-freitas-nl-ZTj-UZX2qo-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    height: 350px;
+  }
+  .herooverlay {
+    text-align: center;
+    background: rgba(218, 212, 223, 0.9);
+    font-size: 2.3rem;
+    font-style: italic;
+    padding: 2rem 0;
+  }
+}
+

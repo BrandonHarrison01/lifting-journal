@@ -1,0 +1,49 @@
+.mainbtncontainer{
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 4rem 0;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainBtn{
+    background: rgb(11, 69, 127);
+    color: white;
+    font-size: 1.5rem;
+    width: 10%;
+    text-align: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    max-height: 200px;
+    min-width: 225px;
+
+    @media (max-width: 767px) {
+      max-height: 300px;
+      min-width: 250px;
+      margin-bottom: 4rem;
+    }
+
+    .btnTitle {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .arrow{
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      text-align: right;
+      
+
+      @media (max-width: 767px) {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+  .mainBtn:first-child:hover{
+    text-decoration:none;
+    background: rgba(11, 69, 127, 0.8);
+  }
+}

@@ -1,0 +1,22 @@
+.middle-content {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0;
+
+  .middleContentImg {
+    width: 50%;
+    height: auto;
+  }
+  .middleContentText {
+    font-size: 4rem;
+    color: rgb(71, 66, 66);
+    font-weight: bold;
+    margin-left: 4rem;
+
+    @media (max-width: 767px) {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}

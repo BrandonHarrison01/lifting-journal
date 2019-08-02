@@ -1,0 +1,62 @@
+.dashboard-page {
+    margin: 60px 30px;
+
+    .deleteButton {
+      width: max-content;
+      margin: 0 auto;
+      font-size: 2rem;
+    }
+
+    .title {
+        font-size: 2.7rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        // font-family: -apple-system, BlinkMacSystemFont;
+        margin-bottom: 60px;
+    }
+
+    .dashboard {
+        // background-color:
+        border-top: 2px solid #F6F0FD
+    }
+
+    .mapped-workouts {
+        border-bottom: 2px solid #F6F0FD;
+        display: flex;
+        padding: 50px 30px;
+        justify-content: space-between;
+
+        .workouts {
+            font-size: 2.7rem;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .btn-container {
+        text-align: center;
+        
+        .new-workout-btn {
+            margin: 40px auto;
+            border: none;
+            border-radius: 5px;
+            font-size: 2.7rem;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            padding: 15px 70px;
+            background-color: #1F7EBF;
+            color: white;
+
+            .new-workout-text{
+              color: white;
+            }
+            .new-workout-text:hover{
+              text-decoration: none;
+            }
+        }
+        .new-workout-btn:hover{
+          background-color: rgba(31, 126, 191, 0.8)
+        }
+    }
+
+}

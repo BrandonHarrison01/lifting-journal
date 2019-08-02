@@ -1,0 +1,96 @@
+    
+.new-workout-page {
+    margin: 60px 30px;
+
+    .title {
+        font-size: 2.7rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 60px;
+    }
+
+    .workout-form {
+        padding: 30px 15px;
+        background-color: #FCFAFE;
+    }
+
+    .form-label {
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .number-input {
+        font-size: 1.5rem;
+        padding: 5px;
+        width: 100px;
+        margin: 10px 20px 0 0;
+        border-radius: 3px;
+    }
+
+    .difficulty {
+        font-size: 1.5rem;
+        padding: 5px;
+        width: 90px;
+        margin: 10px 40px 0 0;
+        border-radius: 3px;
+    }
+
+    .date {
+        font-size: 1.5rem;
+        padding: 5px;
+        width: 160px;
+        margin: 10px 20px 0 0;
+        border-radius: 3px;
+    }
+
+    .workout {
+        font-size: 1.5rem;
+        padding: 5px;
+        margin: 10px 20px 0 0;
+        border-radius: 3px;
+    }
+
+    .type {
+        font-size: 1.5rem;
+        padding: 5px;
+        width: 150px;
+        margin: 10px 20px 0 0;
+        border-radius: 3px;
+    }
+
+    .buttons {
+        text-align: right;
+        margin: 30px 40px 0;
+
+        .exerciseCounter {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          font-style: italic;
+          font-weight: bold;
+        }
+
+        .clear-btn {
+            font-size: 1.6rem;
+            padding: 5px 25px;
+            margin-right: 15px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #FCFAFE;
+            border: 2px solid #1F7EBF;
+            color: #1F7EBF;
+            border-radius: 3px;
+            margin-bottom: 2rem;
+        }
+    
+        .add-btn {
+            font-size: 1.6rem;
+            padding: 7px 27px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1F7EBF;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-bottom: 2rem;
+        }
+    }
+}

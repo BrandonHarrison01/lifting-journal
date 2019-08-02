@@ -1,0 +1,85 @@
+.navbar {
+  font-size: 2rem;
+  padding: 3rem 0;
+
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    font-style: italic;
+  }
+
+  .ml-auto {
+    @media (max-width: 767px) {
+      margin-top: 1rem;
+    }
+  }
+
+  .navbar-toggler {
+    margin-right: 2rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    border-radius: 6px;
+    margin-right: 2rem;
+    padding: 0.75rem 0.75rem;
+    max-width: 11rem;
+
+    @media (max-width: 767px) {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      padding: 0.25rem;
+    }
+
+  }
+
+  .btn:first-child {
+    background: rgb(0, 100, 179);
+    border: none;
+
+    .jointext{
+      color: white;
+    }
+    .jointext:hover{
+      text-decoration: none;
+    }
+  }
+
+  .btn:first-child:hover {
+    background: rgba(0, 100, 179, 0.8)
+  }
+
+  .btn:last-child {
+    background: white;
+    color: rgb(0, 100, 179);
+    border-color: rgb(0, 100, 179);
+
+    .signintext{
+      text-decoration: none;
+    }
+  }
+
+  .btn:last-child:hover {
+    background: rgba(0, 100, 179, 0.2);
+  }
+
+  .mr-auto {
+    margin-left: 1rem;
+  }
+
+  .navbar-nav {
+
+    .nav-link  {
+      color: black;
+      margin-left: 0.75rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
