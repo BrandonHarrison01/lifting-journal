@@ -1,4 +1,3 @@
-    
 [build]
   base = 'journal/'
   publish = "journal/build/"
